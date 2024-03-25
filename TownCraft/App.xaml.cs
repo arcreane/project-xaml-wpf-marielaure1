@@ -12,15 +12,14 @@ namespace TownCraft
 
     public partial class App : Application
     {
-        private GameManager gameManager; // Déclarez une variable pour stocker l'instance de GameManager
+        private GameManager gameManager; 
+
 
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
 
-            gameManager = new GameManager(); // Instanciez GameManager
-
-            // Affichez le menu au démarrage de l'application
+            gameManager = new GameManager(); 
             gameManager.ShowMenu();
         }
     }
