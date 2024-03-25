@@ -1,15 +1,12 @@
-﻿<Window x:Class="WpfGameMap.MainWindow"
+﻿<Window x:Class="TownCraft.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Game Map" Height="450" Width="800">
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TownCraft"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image Source="map.png" Stretch="Fill" MouseDown="Map_MouseDown">
-            <Image.Resources>
-                <!-- Marqueur de joueur -->
-                <Ellipse x:Key="PlayerMarker" Width="20" Height="20" Fill="Red" Stroke="Black" StrokeThickness="2" />
-            </Image.Resources>
-            <!-- Marqueur de joueur initial -->
-            <ContentPresenter Name="playerMarker" Content="{StaticResource PlayerMarker}" Visibility="Hidden" />
-        </Image>
+
     </Grid>
 </Window>

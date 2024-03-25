@@ -1,0 +1,38 @@
+# Fichiers de sauvegarde de Visual Studio
+**/*.vs/
+**/*.suo
+**/*.user
+**/*.userosscache
+**/*.sln.docstates
+
+# Fichiers binaires générés
+**/bin/
+**/obj/
+
+# Fichiers de logs
+**/*.log
+
+# Packages NuGet
+## Exclure tous les fichiers .lock.json, y compris les fichiers transitoires
+**/*.lock.json
+# Ajouter tous les répertoires bin et obj
+## .NET Core
+bin/
+obj/
+## Visual Studio
+*.user
+*.suo
+*.sln.docstates
+## Répertoire nuget
+packages/
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Dossiers temporaires
+[Tt]emp/
+
+# Default ignored files
+/shelf/
+/workspace.xml
+
