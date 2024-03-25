@@ -9,4 +9,11 @@
     <Grid>
 
     </Grid>
+
+    <Button x:Name="DrawCircleButton" Height="40" Width="120"   
+   Canvas.Left="10" Canvas.Top="10"   
+   Content="Draw Circle"  
+   VerticalAlignment="Top"   
+   HorizontalAlignment="Left">
+    </Button>
 </Window>

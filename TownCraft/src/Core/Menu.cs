@@ -12,7 +12,7 @@ public class Menu {
     public string items;
 
     public void display() {
-        // TODO implement here
+        Console.WriteLine("Hello");
     }
 
     /// <summary>
