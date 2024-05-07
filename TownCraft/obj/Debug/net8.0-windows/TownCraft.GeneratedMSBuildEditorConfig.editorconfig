@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TownCraft
-build_property.ProjectDir = C:\Users\edjou\Documents\Developpement\Webstart\Bachelor3\Trimestre-2\C#\Nouveau dossier (2)\TownCraft\TownCraft\
+build_property.ProjectDir = C:\Users\edjou\Documents\Developpement\Webstart\Bachelor3\Trimestre-2\C#\TownCraft\TownCraft\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
