@@ -1,24 +1,33 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class ElectricityBuilding : Building {
+namespace App.Elements.Buildings
+{
+    public class ElectricityBuilding : Building
+    {
+        public ElectricityBuilding()
+        {
+        }
 
-    public ElectricityBuilding() {
+        public string Category { get; } = "electricity";
+
+        public int ElectricityProduction { get; set; }
+
+        public void GetElectricityProduction()
+        {
+            // TODO implement here
+        }
+
+        public void SetElectricityProduction()
+        {
+            // TODO implement here
+        }
+
+        public override void SetPollutionGenerate()
+        {
+            throw new NotImplementedException();
+        }
     }
-
-    public void category = electricity;
-
-    public void electricityProduction;
-
-    public void getElectricityProduction() {
-        // TODO implement here
-    }
-
-    public void setElectricityProduction() {
-        // TODO implement here
-    }
-
 }

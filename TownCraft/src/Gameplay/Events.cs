@@ -4,9 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Events {
+namespace App.Gameplay
+{
+    public class Events
+    {
 
-    public Events() {
+        public Events()
+        {
+        }
     }
 
 }

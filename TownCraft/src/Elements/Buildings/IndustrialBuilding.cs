@@ -1,14 +1,21 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class IndustrialBuilding : Building {
+namespace App.Elements.Buildings
+{
+    public class IndustrialBuilding : Building
+    {
+        public IndustrialBuilding()
+        {
+        }
 
-    public IndustrialBuilding() {
+        public string Category { get; } = "industrial";
+
+        public override void SetPollutionGenerate()
+        {
+            throw new NotImplementedException();
+        }
     }
-
-    public void category = industrial;
-
 }

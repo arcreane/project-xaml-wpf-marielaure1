@@ -4,9 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Bridge : Infrastructure {
+namespace App.Elements.Buildings.Infrastructure
+{
+    public class Bridge : Infrastructure
+    {
 
-    public Bridge() {
+        public Bridge()
+        {
+        }
     }
-
 }

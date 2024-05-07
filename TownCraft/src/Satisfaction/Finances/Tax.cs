@@ -1,32 +1,38 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Tax : Finance {
+namespace App.Satisfaction.Finances
+{
+    public class Tax : Finance
+    {
+        public Tax()
+        {
+        }
 
-    public Tax() {
+        public decimal Amount { get; set; }
+
+        public decimal Percent { get; set; }
+
+        public void GetAmount()
+        {
+            // TODO implement here
+        }
+
+        public void SetAmount()
+        {
+            // TODO implement here
+        }
+
+        public void GetPercent()
+        {
+            // TODO implement here
+        }
+
+        public void SetPercent()
+        {
+            // TODO implement here
+        }
     }
-
-    public void amount;
-
-    public void percent;
-
-    public void getAmount() {
-        // TODO implement here
-    }
-
-    public void setAmount() {
-        // TODO implement here
-    }
-
-    public void getPercent() {
-        // TODO implement here
-    }
-
-    public void setPercent() {
-        // TODO implement here
-    }
-
 }

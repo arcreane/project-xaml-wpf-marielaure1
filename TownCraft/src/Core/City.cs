@@ -4,9 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class City {
+namespace App.Core
+{
+    public class City
+    {
 
-    public City() {
+        public City()
+        {
+        }
     }
 
 }

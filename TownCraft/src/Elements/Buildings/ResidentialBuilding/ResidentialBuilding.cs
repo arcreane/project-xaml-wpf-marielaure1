@@ -1,24 +1,28 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public abstract class ResidentialBuilding : Building {
+namespace App.Elements.Buildings.ResidentialBuilding
+{
+    public abstract class ResidentialBuilding : Building
+    {
+        public ResidentialBuilding()
+        {
+        }
 
-    public ResidentialBuilding() {
+        public int NumberOfOccupants { get; set; }
+
+        public int Level { get; set; }
+
+        public void GetNumberOfOccupants()
+        {
+            // TODO implement here
+        }
+
+        public void SetNumberOfOccupants()
+        {
+            // TODO implement here
+        }
     }
-
-    public void numberOfOccupants;
-
-    public void level;
-
-    public void getNumberOfOccupants() {
-        // TODO implement here
-    }
-
-    public void setNumberOfOccupants() {
-        // TODO implement here
-    }
-
 }

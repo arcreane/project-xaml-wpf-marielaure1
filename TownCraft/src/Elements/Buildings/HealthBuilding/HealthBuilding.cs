@@ -1,24 +1,28 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public abstract class HealthBuilding : Building {
+namespace App.Elements.Buildings.HealthBuilding
+{
+    public abstract class HealthBuilding : Building
+    {
+        public HealthBuilding()
+        {
+        }
 
-    public HealthBuilding() {
+        public int NumberOfBeds { get; set; }
+
+        public string Category { get; } = "health";
+
+        public void GetNumberOfBeds()
+        {
+            // TODO implement here
+        }
+
+        public void SetNumberOfBeds()
+        {
+            // TODO implement here
+        }
     }
-
-    public void numberOfBeds;
-
-    public void category = health;
-
-    public void getNumberOfBeds() {
-        // TODO implement here
-    }
-
-    public void setNumberOfBeds() {
-        // TODO implement here
-    }
-
 }

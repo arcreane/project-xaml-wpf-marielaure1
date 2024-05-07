@@ -1,44 +1,39 @@
-
+using App.Gameplay;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public enum GameState
+namespace App.GameManager
 {
-    Menu,
-    Running,
-    Paused,
-    Ended
-}
+    public enum GameState
+    {
+        Menu,
+        Running,
+        Paused,
+        Ended
+    }
 
-namespace GameManagerNamespace
-{
     public class GameManager
     {
-
         private GameState _gameState = GameState.Menu;
 
-        public Time CurrentTime;
-
-        public Audio Audio;
-
-        public Game Game;
-
-        public Menu Menu;
+        public Time CurrentTime { get; private set; }
+        public App.Gameplay.Audio Audio { get; private set; }
+        public App.Core.Game Game { get; private set; }
+        public App.Core.Menu Menu { get; private set; }
 
         public GameManager()
         {
             CurrentTime = new Time();
-            Audio = new Audio();
-            Menu = new Menu();
+            Audio = new App.Gameplay.Audio();
+            Menu = new App.Core.Menu();
             ShowMenu();
         }
 
         public void ShowMenu()
         {
             _gameState = GameState.Menu;
-
             Menu.display();
             Console.ReadLine();
         }
@@ -67,6 +62,5 @@ namespace GameManagerNamespace
         {
             // TODO implement here
         }
-
     }
 }

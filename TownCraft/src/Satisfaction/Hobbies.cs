@@ -1,32 +1,41 @@
-
+using App.Satisfaction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Hobbies : Satisfaction {
+namespace App.Satisfaction
+{
+    public class Hobbies : Satisfaction
+    {
 
-    public Hobbies() {
-    }
+        public Hobbies()
+        {
+        }
 
-    public void numberOfHobbies;
+        public int NumberOfHobbies { get; set; }
 
-    public void hobbiesBuilding;
+        public int HobbiesBuilding { get; set; }
 
-    public void getNumberOfHobbies() {
-        // TODO implement here
-    }
+        public void GetNumberOfHobbies()
+        {
+            // TODO implement here
+        }
 
-    public void setNumberOfHobbies() {
-        // TODO implement here
-    }
+        public void SetNumberOfHobbies()
+        {
+            // TODO implement here
+        }
 
-    public void getHobbiesBuilding() {
-        // TODO implement here
-    }
+        public void GetHobbiesBuilding()
+        {
+            // TODO implement here
+        }
 
-    public void setHobbiesBuilding() {
-        // TODO implement here
+        public void SetHobbiesBuilding()
+        {
+            // TODO implement here
+        }
     }
 
 }

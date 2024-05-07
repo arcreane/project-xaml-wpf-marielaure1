@@ -1,32 +1,38 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Work : Satisfaction {
+namespace App.Satisfaction
+{
+    public class Work : Satisfaction
+    {
+        public Work()
+        {
+        }
 
-    public Work() {
+        public int NumberOfEmployment { get; set; }
+
+        public int WorkBuildings { get; set; }
+
+        public void GetNumberOfEmployment()
+        {
+            // TODO implement here
+        }
+
+        public void SetNumberOfEmployment()
+        {
+            // TODO implement here
+        }
+
+        public void GetWorkBuildings()
+        {
+            // TODO implement here
+        }
+
+        public void SetWorkBuildings()
+        {
+            // TODO implement here
+        }
     }
-
-    public void numberOfEmployment;
-
-    public void workBuildings;
-
-    public void getNumberOfEmployment() {
-        // TODO implement here
-    }
-
-    public void setNumberOfEmployment() {
-        // TODO implement here
-    }
-
-    public void getWorkBuildings() {
-        // TODO implement here
-    }
-
-    public void setWorkBuildings() {
-        // TODO implement here
-    }
-
 }

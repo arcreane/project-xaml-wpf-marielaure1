@@ -1,32 +1,39 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Residence : Satisfaction {
+namespace App.Satisfaction
+{
+    public class Residence : Satisfaction
+    {
 
-    public Residence() {
+        public Residence()
+        {
+        }
+
+        public int NumberOfOccupants { get; set; }
+
+        public int ResidenceBuildings { get; set; }
+
+        public void GetNumberOfOccupants()
+        {
+            // TODO implement here
+        }
+
+        public void SetNumberOfOccupants()
+        {
+            // TODO implement here
+        }
+
+        public void GetResidenceBuildings()
+        {
+            // TODO implement here
+        }
+
+        public void SetResidenceBuildings()
+        {
+            // TODO implement here
+        }
     }
-
-    public void numberOfOccupants;
-
-    public void residenceBuildings;
-
-    public void getNumberOfOccupants() {
-        // TODO implement here
-    }
-
-    public void setNumberOfOccupants() {
-        // TODO implement here
-    }
-
-    public void getResidenceBuildings() {
-        // TODO implement here
-    }
-
-    public void setResidenceBuildings() {
-        // TODO implement here
-    }
-
 }

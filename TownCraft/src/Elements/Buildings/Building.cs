@@ -1,121 +1,142 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public abstract class Building : Elements {
+namespace App.Elements.Buildings
+{
+    public abstract class Building : Elements
+    {
+        public Building()
+        {
+        }
 
-    public Building() {
+        public string Name { get; set; }
+
+        public string Category { get; set; }
+
+        public double Area { get; set; }
+
+        public double ConstructionCost { get; set; }
+
+        public double EnergyConsumption { get; set; }
+
+        public double WaterConsumption { get; set; }
+
+        public double PollutionGenerate { get; set; }
+
+        public int Level { get; set; }
+
+        public double Attribute1 { get; set; }
+
+        public double EmploymentRate { get; set; }
+
+        public double Maintenance { get; set; }
+
+        public void GetName()
+        {
+            // TODO implement here
+        }
+
+        public void SetName()
+        {
+            // TODO implement here
+        }
+
+        public void GetCategory()
+        {
+            // TODO implement here
+        }
+
+        public void SetCategory()
+        {
+            // TODO implement here
+        }
+
+        public void GetConstructionCost()
+        {
+            // TODO implement here
+        }
+
+        public void SetConstructionCost()
+        {
+            // TODO implement here
+        }
+
+        public void GetEnergyConsumption()
+        {
+            // TODO implement here
+        }
+
+        /// <summary>
+        /// Simule la consommation d'énergie du bâtiment
+        /// </summary>
+        public void SetEnergyConsumption()
+        {
+            // TODO implement here
+        }
+
+        public void GetWaterConsumption()
+        {
+            // TODO implement here
+        }
+
+        /// <summary>
+        /// Simule la consommation d'eau du bâtiment
+        /// </summary>
+        public void SetWaterConsumption()
+        {
+            // TODO implement here
+        }
+
+        public void GetPollutionGenerate()
+        {
+            // TODO implement here
+        }
+
+        /// <summary>
+        /// Simule la pollution générée par le bâtiment
+        /// </summary>
+        public abstract void SetPollutionGenerate();
+
+        public void GetLevel()
+        {
+            // TODO implement here
+        }
+
+        public void SetLevel()
+        {
+            // TODO implement here
+        }
+
+        public void GetEmploymentRate()
+        {
+            // TODO implement here
+        }
+
+        public void SetEmploymentRate()
+        {
+            // TODO implement here
+        }
+
+        public void GetTax()
+        {
+            // TODO implement here
+        }
+
+        public void SetTax()
+        {
+            // TODO implement here
+        }
+
+        public void GetMaintenance()
+        {
+            // TODO implement here
+        }
+
+        public void SetMaintenance()
+        {
+            // TODO implement here
+        }
     }
-
-    public void name;
-
-    public void category;
-
-    public void area;
-
-    public void constructionCost;
-
-    public void energyConsumption;
-
-    public void waterConsumption;
-
-    public void pollutionGenerate;
-
-    public void level;
-
-    public void Attribute1;
-
-    public void employmentRate;
-
-    public void maintenance;
-
-    public void getName() {
-        // TODO implement here
-    }
-
-    public void setName() {
-        // TODO implement here
-    }
-
-    public void getCategory() {
-        // TODO implement here
-    }
-
-    public void setCategory() {
-        // TODO implement here
-    }
-
-    public void getConstructionCost() {
-        // TODO implement here
-    }
-
-    public void setConstructionCost() {
-        // TODO implement here
-    }
-
-    public void getEnergyConsuption() {
-        // TODO implement here
-    }
-
-    /// <summary>
-    /// Simule la consommation d'énergie du bâtiment
-    /// </summary>
-    public void setEnergyConsuption() {
-        // TODO implement here
-    }
-
-    public void getWaterConsumption() {
-        // TODO implement here
-    }
-
-    /// <summary>
-    /// Simule la consommation d'eau du bâtiment
-    /// </summary>
-    public void setWaterConsumption() {
-        // TODO implement here
-    }
-
-    public void getPollutionGenerate() {
-        // TODO implement here
-    }
-
-    /// <summary>
-    /// Simule la pollution générée par le bâtiment
-    /// </summary>
-    public abstract void setPollutionGenerate();
-
-    public void getLevel() {
-        // TODO implement here
-    }
-
-    public void setLevel() {
-        // TODO implement here
-    }
-
-    public void getEmploymentRate() {
-        // TODO implement here
-    }
-
-    public void setEmploymentRate() {
-        // TODO implement here
-    }
-
-    public void getTax() {
-        // TODO implement here
-    }
-
-    public void setTax() {
-        // TODO implement here
-    }
-
-    public void getMaintenance() {
-        // TODO implement here
-    }
-
-    public void setMaintenance() {
-        // TODO implement here
-    }
-
 }

@@ -4,9 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class PoliceStation : Security {
+namespace App.Elements.Buildings.SecurityBuildings
+{
+    public class PoliceStation : SecurityBuildings
+    {
 
-    public PoliceStation() {
+        public PoliceStation()
+        {
+        }
+
     }
-
 }

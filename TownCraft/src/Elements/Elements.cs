@@ -1,42 +1,56 @@
-
+using App.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Elements : Cell {
+namespace App.Elements
+{
+    public class Elements : Cell
+    {
 
-    public Elements() {
+        public Elements()
+        {
+        }
+
+        public string Type { get; set; }
+
+        public string Position { get; set; }
+
+        public string Texture { get; set; }
+
+        public string GetType()
+        {
+            // TODO implement here
+            return "";
+        }
+
+        public string GetPosition()
+        {
+            // TODO implement here
+            return "";
+        }
+
+        public void SetType(string type)
+        {
+            // TODO implement here
+        }
+
+        public void SetPosition(string position)
+        {
+            // TODO implement here
+        }
+
+        public string GetTexture()
+        {
+            // TODO implement here
+            return "";
+        }
+
+        public void SetTexture(string texture)
+        {
+            // TODO implement here
+        }
+
     }
-
-    public void type;
-
-    public void position;
-
-    public void texture;
-
-    public void getType() {
-        // TODO implement here
-    }
-
-    public void getPosition() {
-        // TODO implement here
-    }
-
-    public void setType() {
-        // TODO implement here
-    }
-
-    public void setPosition() {
-        // TODO implement here
-    }
-
-    public void getTexture() {
-        // TODO implement here
-    }
-
-    public void setTexture() {
-        // TODO implement here
-    }
-
 }

@@ -1,32 +1,38 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Education : Satisfaction {
+namespace App.Satisfaction
+{
+    public class Education : Satisfaction
+    {
+        public Education()
+        {
+        }
 
-    public Education() {
+        public int NumberOfPlace { get; set; }
+
+        public int EducationBuildings { get; set; }
+
+        public void GetNumberOfPlace()
+        {
+            // TODO implement here
+        }
+
+        public void SetNumberOfPlace()
+        {
+            // TODO implement here
+        }
+
+        public void GetEducationBuildings()
+        {
+            // TODO implement here
+        }
+
+        public void SetEducationBuildings()
+        {
+            // TODO implement here
+        }
     }
-
-    public void numberOfPlace;
-
-    public void educationBuildings;
-
-    public void getNumberOfPlace() {
-        // TODO implement here
-    }
-
-    public void setNumberOfPlace() {
-        // TODO implement here
-    }
-
-    public void getEducationBuildings() {
-        // TODO implement here
-    }
-
-    public void setEducationBuildings() {
-        // TODO implement here
-    }
-
 }

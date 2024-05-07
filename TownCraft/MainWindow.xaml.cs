@@ -1,24 +1,30 @@
-﻿using System.Text;
+﻿using System.Configuration;
+using System.Data;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+///using GameManagerNamespace;
 
 namespace TownCraft
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for App.xaml
     /// </summary>
-    public partial class MainWindow : Window
+
+
+    public partial class App : Application
     {
-        public MainWindow()
+        ///private GameManager gameManager; 
+
+
+        protected override void OnStartup(StartupEventArgs e)
         {
-            InitializeComponent();
+
+            Console.WriteLine("Hello");
+            string test = Console.ReadLine();
+            ///base.OnStartup(e);
+
+            ///gameManager = new GameManager(); 
+            /// gameManager.ShowMenu();
         }
     }
+
 }

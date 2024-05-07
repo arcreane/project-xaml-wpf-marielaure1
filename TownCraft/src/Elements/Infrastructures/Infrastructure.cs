@@ -1,14 +1,16 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Infrastructure : Elements {
+namespace App.Elements.Buildings.Infrastructure
+{
+    public class Infrastructure : Elements
+    {
+        public Infrastructure()
+        {
+        }
 
-    public Infrastructure() {
+        public string Type { get; } = "infrastructure";
     }
-
-    public void type = infrastructure;
-
 }

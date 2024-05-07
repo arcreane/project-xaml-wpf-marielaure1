@@ -1,22 +1,27 @@
-
+using App.Satisfaction.Finances;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Maintenance : Finance {
+namespace App.Satisfaction.Finances
+{
+    public class Maintenance : Finance
+    {
+        public Maintenance()
+        {
+        }
 
-    public Maintenance() {
+        public decimal Amount { get; set; }
+
+        public void GetAmount()
+        {
+            // TODO implement here
+        }
+
+        public void SetAmount()
+        {
+            // TODO implement here
+        }
     }
-
-    public void amount;
-
-    public void getAmount() {
-        // TODO implement here
-    }
-
-    public void setAmount() {
-        // TODO implement here
-    }
-
 }

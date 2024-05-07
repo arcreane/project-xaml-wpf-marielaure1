@@ -1,14 +1,21 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class OfficeBuilding : Building {
+namespace App.Elements.Buildings
+{
+    public class OfficeBuilding : Building
+    {
+        public OfficeBuilding()
+        {
+        }
 
-    public OfficeBuilding() {
+        public string Category { get; } = "office";
+
+        public override void SetPollutionGenerate()
+        {
+            throw new NotImplementedException();
+        }
     }
-
-    public void category = office;
-
 }

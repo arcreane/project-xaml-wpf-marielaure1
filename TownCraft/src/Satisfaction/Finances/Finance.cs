@@ -1,22 +1,26 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Finance : Satisfaction {
+namespace App.Satisfaction.Finances
+{
+    public class Finance : Satisfaction
+    {
+        public Finance()
+        {
+        }
 
-    public Finance() {
+        public decimal CityFlouz { get; set; }
+
+        public void GetCityFlouz()
+        {
+            // TODO implement here
+        }
+
+        public void SetCityFlouz()
+        {
+            // TODO implement here
+        }
     }
-
-    public void cityflouz;
-
-    public void getCityFlouz() {
-        // TODO implement here
-    }
-
-    public void setCityFlouz() {
-        // TODO implement here
-    }
-
 }

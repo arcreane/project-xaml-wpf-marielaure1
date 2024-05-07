@@ -1,32 +1,40 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Health : Satisfaction {
+namespace App.Satisfaction
+{
+    public class Health : Satisfaction
+    {
 
-    public Health() {
+        public Health()
+        {
+        }
+
+        public int NumberOfBeds { get; set; }
+
+        public int HealthBuildings { get; set; }
+
+        public void GetNumberOfBeds()
+        {
+            // TODO implement here
+        }
+
+        public void SetNumberOfBeds()
+        {
+            // TODO implement here
+        }
+
+        public void GetHealthBuildings()
+        {
+            // TODO implement here
+        }
+
+        public void SetHealthBuildings()
+        {
+            // TODO implement here
+        }
+
     }
-
-    public void numberOfBeds;
-
-    public void healthBuildings;
-
-    public void getNumberOfBeds() {
-        // TODO implement here
-    }
-
-    public void setNumberOfBeds() {
-        // TODO implement here
-    }
-
-    public void getHealthBuildings() {
-        // TODO implement here
-    }
-
-    public void setHealthBuildings() {
-        // TODO implement here
-    }
-
 }

@@ -4,9 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class ShoppingCenter : CommercialBuilding {
+namespace App.Elements.Buildings.CommercialBuilding
+{
+    public class ShoppingCenter : CommercialBuilding
+    {
 
-    public ShoppingCenter() {
+        public ShoppingCenter()
+        {
+        }
     }
-
 }

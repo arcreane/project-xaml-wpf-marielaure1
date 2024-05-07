@@ -4,9 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class ApartmentBlock : ResidentialBuilding {
+namespace App.Elements.Buildings.ResidentialBuilding
+{
+    public class ApartmentBlock : ResidentialBuilding
+    {
 
-    public ApartmentBlock() {
+        public ApartmentBlock()
+        {
+        }
+
+        public override void SetPollutionGenerate()
+        {
+            throw new NotImplementedException();
+        }
     }
-
 }

@@ -1,70 +1,61 @@
-
+using App.Elements.Buildings.Infrastructure;
+using App.Elements.Buildings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Cell : City {
+namespace App.Core
+{
+    public class Cell : City
+    {
+        public Cell()
+        {
+        }
 
-    public Cell() {
+        public int X { get; set; }
+        public int Y { get; set; }
+
+        public string Type { get; set; }
+
+        public bool Available { get; set; }
+
+        public Infrastructure Infrastructure { get; set; }
+
+        public Building Building { get; set; }
+
+        public string GetType()
+        {
+            // TODO implement here
+            return "";
+        }
+
+        public bool IsAvailable()
+        {
+            // TODO implement here
+            return false;
+        }
+
+        public void SetInfrastructure(Infrastructure infrastructure)
+        {
+            // TODO implement here
+        }
+
+        public void SetBuilding(Building building)
+        {
+            // TODO implement here
+        }
+
+        public Infrastructure GetInfrastructure()
+        {
+            // TODO implement here
+            return null;
+        }
+
+        public Building GetBuilding()
+        {
+            // TODO implement here
+            return null;
+        }
     }
-
-    public int x;
-
-    public int y;
-
-    public string type;
-
-    public boolean available;
-
-    public Infrastructure infrastructure;
-
-    public Building building;
-
-    /// <summary>
-    /// @return
-    /// </summary>
-    public string getType() {
-        // TODO implement here
-        return "";
-    }
-
-    /// <summary>
-    /// @return
-    /// </summary>
-    public boolean isAvailable() {
-        // TODO implement here
-        return null;
-    }
-
-    /// <summary>
-    /// @param infrastructure
-    /// </summary>
-    public void setInfrastructure(Infrastructure infrastructure) {
-        // TODO implement here
-    }
-
-    /// <summary>
-    /// @param building
-    /// </summary>
-    public void setBuilding(Building building) {
-        // TODO implement here
-    }
-
-    /// <summary>
-    /// @return
-    /// </summary>
-    public Infrastructure getInfrastructure() {
-        // TODO implement here
-        return null;
-    }
-
-    /// <summary>
-    /// @return
-    /// </summary>
-    public Building getBuilding() {
-        // TODO implement here
-        return null;
-    }
-
 }

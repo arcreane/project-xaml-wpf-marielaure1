@@ -4,9 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Water : Resource {
+namespace App.Satisfaction.Resources
+{
+    public class Water : Resource
+    {
 
-    public Water() {
+        public Water()
+        {
+        }
     }
 
 }

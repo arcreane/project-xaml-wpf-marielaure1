@@ -1,24 +1,33 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class EducationBuilding : Building {
+namespace App.Elements.Buildings
+{
+    public class EducationBuilding : Building
+    {
+        public EducationBuilding()
+        {
+        }
 
-    public EducationBuilding() {
+        public string Category { get; } = "education";
+
+        public int NumberOfPlaces { get; set; }
+
+        public void GetNumberOfPlaces()
+        {
+            // TODO implement here
+        }
+
+        public void SetNumberOfPlaces()
+        {
+            // TODO implement here
+        }
+
+        public override void SetPollutionGenerate()
+        {
+            throw new NotImplementedException();
+        }
     }
-
-    public void category = education;
-
-    public void numberOfPlaces;
-
-    public void getNumberOfPlaces() {
-        // TODO implement here
-    }
-
-    public void setNumberOfPlaces() {
-        // TODO implement here
-    }
-
 }
