@@ -1,24 +1,24 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace TownCraft
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MenuItem_CreateGame_Click(object sender, RoutedEventArgs e)
+        {
+            // Afficher le formulaire de création de partie
+            createFormGrid.Visibility = Visibility.Visible;
+        }
+
+        private void MenuItem_LoadGame_Click(object sender, RoutedEventArgs e)
+        {
+            // Implémentez ici le chargement d'une partie
+            createFormGrid.Visibility = Visibility.Hidden;
         }
     }
 }

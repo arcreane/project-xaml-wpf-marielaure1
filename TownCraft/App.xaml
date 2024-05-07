@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:TownCraft"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="35"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Foreground" Value="DarkGray"/>
+            <Setter Property="FontFamily" Value="res/fonts/terminal-grotesque.ttf #Terminal Grotesque"/>
+            </Style>
     </Application.Resources>
 </Application>

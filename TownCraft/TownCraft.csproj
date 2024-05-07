@@ -10,12 +10,21 @@
 
   <ItemGroup>
     <None Remove="aryanoone_A_realistic_vibrant_and_highy_descriptive_interface_f_84d6ed6c-8eea-4120-a8eb-4d81766015d0.png" />
+    <None Remove="banner1.png" />
     <None Remove="ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png" />
+    <None Remove="res\images\banner\banner1.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="aryanoone_A_realistic_vibrant_and_highy_descriptive_interface_f_84d6ed6c-8eea-4120-a8eb-4d81766015d0.png" />
+    <Resource Include="banner1.png" />
     <Resource Include="ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="res\images\banner\banner1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </SplashScreen>
   </ItemGroup>
 
 </Project>

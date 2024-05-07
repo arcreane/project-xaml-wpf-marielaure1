@@ -5,11 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TownCraft"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="TownCraft" Height="450" Width="800">
     <Window.Background>
-        <ImageBrush ImageSource="/ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png" Stretch="UniformToFill"/>
+        <ImageBrush ImageSource="/banner1.png" Stretch="UniformToFill" TileMode="None"/>
     </Window.Background>
-    <Grid>
+    <Grid Background="#CC22778A">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="751*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="1" Content="TownCraft" HorizontalAlignment="Left" Margin="192,48,0,0" VerticalAlignment="Top" Foreground="White" FontSize="70" FontWeight="Bold"/>
+
+        <StackPanel Grid.Column="1" Margin="252,178,300,178">
+            <Button Click="MenuItem_CreateGame_Click" Margin="0 0 0 10" Padding="15 8" Background="White" Cursor="Hand" HorizontalAlignment="Center" HorizontalContentAlignment="Center" BorderBrush="{x:Null}" UseLayoutRounding="False" Width="200">Créer une partie</Button>
+            <Button Click="MenuItem_LoadGame_Click" Padding="15 8" Background="White" Cursor="Hand" HorizontalAlignment="Center" HorizontalContentAlignment="Center" BorderBrush="{x:Null}" UseLayoutRounding="False" Width="200">Charger une partie</Button>
+        </StackPanel>
+
+        <GroupBox Margin="192,160,245,106" Grid.Column="1"  Name="createFormGrid" >
+            <!-- Ajoutez ici les contrôles de votre formulaire -->
+            <Label Content="Formulaire de création de partie" Foreground="White" FontSize="16" Margin="0,0,30,0" Height="27"/>
+
+            <StackPanel Margin="0, 0, 30, 0"  Width="300">
+                <Label Content="Nom du Joueur" Foreground="White" FontSize="14" Margin="0, 0, 10, 0"/>
+                <TextBox HorizontalAlignment="Left"  Padding="15 4" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" BorderThickness="0,0,0,1" Background="{x:Null}" BorderBrush="White"/>
+            </StackPanel>
+            <StackPanel Margin="0, 0, 30, 0"  Width="300">
+                <Label Content="Nom de la Ville" Foreground="White" FontSize="14" Margin="0, 0, 10, 0"/>
+                <TextBox HorizontalAlignment="Left"  Padding="15 4" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" BorderThickness="0,0,0,1" Background="{x:Null}" BorderBrush="White"/>
+            </StackPanel>
+
+        </GroupBox>
+
 
     </Grid>
+
+
 </Window>
