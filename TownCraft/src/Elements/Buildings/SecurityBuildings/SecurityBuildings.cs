@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace App.Elements.Buildings.SecurityBuildings
+namespace TownCraft.Elements.Buildings.SecurityBuildings
 {
     public class SecurityBuildings : Building
     {

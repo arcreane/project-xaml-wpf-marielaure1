@@ -1,42 +1,44 @@
-
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace App.Core
+namespace TownCraft.Core
 {
     public class Menu
     {
-
-        public Menu()
+        public static void SelectOption(int option)
         {
+            // Gérer la sélection de l'option
+            switch (option)
+            {
+                case 1:
+                    // Nouvelle partie
+                    Console.WriteLine("Nouvelle partie démarrée.");
+                    break;
+                case 2:
+                    // Charger partie
+                    Console.WriteLine("Chargement de la partie...");
+                    break;
+                case 3:
+                    // Options
+                    Console.WriteLine("Options du jeu.");
+                    break;
+                case 4:
+                    // Quitter
+                    Console.WriteLine("Quitter le jeu.");
+                    break;
+                default:
+                    Console.WriteLine("Option invalide.");
+                    break;
+            }
         }
 
-        public string items;
-
-        public void display()
+        // Méthode pour obtenir toutes les sauvegardes
+        public static string[] GetAllSaves()
         {
-            Console.WriteLine("Hello");
-        }
+            // Ici, vous pouvez implémenter la logique pour récupérer toutes les sauvegardes du jeu
+            // Par exemple, vous pouvez lire les fichiers de sauvegarde depuis un répertoire spécifique
 
-        /// <summary>
-        /// @param item
-        /// </summary>
-        public void selectItem(string item)
-        {
-            // TODO implement here
-        }
-
-        public void LoadGame()
-        {
-            // TODO implement here
-        }
-
-        public void QuitGame()
-        {
-            // TODO implement here
+            // Pour l'exemple, je retourne un tableau de chaînes vides
+            return new string[0];
         }
     }
-
 }

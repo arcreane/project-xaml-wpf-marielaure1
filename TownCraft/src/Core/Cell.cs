@@ -1,11 +1,11 @@
-using App.Elements.Buildings.Infrastructure;
-using App.Elements.Buildings;
+using TownCraft.Elements.Buildings.Infrastructure;
+using TownCraft.Elements.Buildings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace App.Core
+namespace TownCraft.Core
 {
     public class Cell : City
     {

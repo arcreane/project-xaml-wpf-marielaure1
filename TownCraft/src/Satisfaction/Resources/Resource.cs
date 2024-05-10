@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace App.Satisfaction.Resources
+namespace TownCraft.Satisfaction.Resources
 {
     /// <summary>
     /// Classe de base pour toutes les ressources

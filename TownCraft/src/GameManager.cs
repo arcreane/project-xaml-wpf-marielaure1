@@ -1,10 +1,10 @@
-using App.Gameplay;
+using TownCraft.Gameplay;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace App.GameManager
+namespace TownCraft
 {
     public enum GameState
     {
@@ -19,22 +19,29 @@ namespace App.GameManager
         private GameState _gameState = GameState.Menu;
 
         public Time CurrentTime { get; private set; }
-        public App.Gameplay.Audio Audio { get; private set; }
-        public App.Core.Game Game { get; private set; }
-        public App.Core.Menu Menu { get; private set; }
-
+        public TownCraft.Gameplay.Audio Audio { get; private set; }
+        public TownCraft.Core.Game Game { get; private set; }
+        public TownCraft.Core.Menu Menu { get; private set; }
+        private TownCraft.Core.Menu _menu;
+          
         public GameManager()
         {
+            //_menu = new TownCraft.Core.Menu();
+
             CurrentTime = new Time();
-            Audio = new App.Gameplay.Audio();
-            Menu = new App.Core.Menu();
-            ShowMenu();
+            Audio = new TownCraft.Gameplay.Audio();
+            // Afficher le menu au démarrage du jeu
+            //_menu.Display();
+            // Attendre la sélection de l'utilisateur
+            //int option = int.Parse(Console.ReadLine());
+            // Gérer l'option sélectionnée
+            //_menu.SelectOption(option);
         }
 
         public void ShowMenu()
         {
             _gameState = GameState.Menu;
-            Menu.display();
+            //Menu.Display();
             Console.ReadLine();
         }
 
@@ -62,5 +69,16 @@ namespace App.GameManager
         {
             // TODO implement here
         }
+
+        public void SaveGame()
+        {
+            if (_gameData != null)
+            {
+                string json = JsonConvert.SerializeObject(_gameData);
+                File.WriteAllText("gameData.json", json);
+            }
+        }
     }
 }
+
+

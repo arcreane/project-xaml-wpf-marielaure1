@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace App.Gameplay
+namespace TownCraft.Gameplay
 {
     public class Events
     {

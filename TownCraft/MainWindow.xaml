@@ -5,40 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TownCraft"
         mc:Ignorable="d"
-        Title="TownCraft" Height="450" Width="800">
+        Title="TownCraft"
+        Width="800"
+        Height="500">
+
     <Window.Background>
         <ImageBrush ImageSource="/banner1.png" Stretch="UniformToFill" TileMode="None"/>
     </Window.Background>
-    <Grid Background="#CC22778A">
+    <Grid Background="#CC22778A" >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="49*"/>
-            <ColumnDefinition Width="751*"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <Label Grid.Column="1" Content="TownCraft" HorizontalAlignment="Left" Margin="192,48,0,0" VerticalAlignment="Top" Foreground="White" FontSize="70" FontWeight="Bold"/>
 
-        <StackPanel Name="MenuChoice" Grid.Column="1" Margin="252,178,300,147">
-            <Button Click="MenuItem_CreateGame_Click" Margin="0 0 0 10" Padding="15 8" Background="White" Cursor="Hand" HorizontalAlignment="Center" HorizontalContentAlignment="Center" BorderBrush="{x:Null}" UseLayoutRounding="False" Width="200">Créer une partie</Button>
-            <Button Click="MenuItem_LoadGame_Click" Padding="15 8" Background="White" Cursor="Hand" HorizontalAlignment="Center" HorizontalContentAlignment="Center" BorderBrush="{x:Null}" UseLayoutRounding="False" Width="200">Charger une partie</Button>
-        </StackPanel>
+        <Button Name="MenuBackBtnUI" Click="MenuButton_Click" Margin="27,48,0,272" Padding="10 5" Background="White" Cursor="Hand" HorizontalAlignment="Left" HorizontalContentAlignment="Center" BorderBrush="{x:Null}" UseLayoutRounding="False" FontSize="10" Width="51" Height="30" RenderTransformOrigin="3.039,-0.332">Retour</Button>
 
-        <Grid Name="createFormGrid" Margin="192,160,245,69" Grid.Column="1" Visibility="Hidden">
-            <StackPanel Margin="0,0,14,137"  Width="300">
-                <Label Content="Formulaire de création de partie" Foreground="White" FontSize="16" Margin="0,0,30,0" Height="30" Width="298"/>
-            </StackPanel>
+        <Label Grid.Row="0" Margin="209,0,0,0"  Content="TownCraft" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="70" FontWeight="Bold" Height="80"/>
 
-            <StackPanel Margin="0,109,14,11"  Width="300">
-                <Label Content="Nom du Joueur" Foreground="White" FontSize="14" Margin="0, 0, 10, 0"/>
-                <TextBox HorizontalAlignment="Left"  Padding="15 4" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="27" BorderThickness="0,0,0,1" Background="{x:Null}" BorderBrush="White"/>
-            </StackPanel>
-            <StackPanel Margin="2,41,12,78"  Width="300">
-                <Label Content="Nom de la Ville" Foreground="White" FontSize="14" Margin="0, 0, 10, 0"/>
-                <TextBox HorizontalAlignment="Left"  Padding="15 4" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="27" BorderThickness="0,0,0,1" Background="{x:Null}" BorderBrush="White"/>
-            </StackPanel>
-
-        </Grid>
-
-
+        <Frame Name="MenuFrame" Navigated="MenuFrame_Navigated" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Margin="0,0,-272,0" Source="src/Ui/MenuUI.xaml" NavigationUIVisibility="Hidden"/>
+        <!-- Modified Grid.Row and added Navigated event -->
     </Grid>
-
-
 </Window>

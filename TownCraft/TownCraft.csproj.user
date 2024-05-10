@@ -7,7 +7,39 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="src\Ui\CreateGameUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="src\Ui\GameUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="src\Ui\LoadGameUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="src\Ui\MenuUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="src\Ui\SplashScreenUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="src\Ui\CreateGameUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="src\Ui\GameUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="src\Ui\LoadGameUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="src\Ui\MenuUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="src\Ui\SplashScreenUI.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

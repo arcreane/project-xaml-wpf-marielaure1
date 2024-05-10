@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace App.Elements.Buildings.ResidentialBuilding
+namespace TownCraft.Elements.Buildings.ResidentialBuilding
 {
     public class SocialHousing : ResidentialBuilding
     {

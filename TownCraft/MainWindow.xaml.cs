@@ -1,26 +1,33 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Navigation;
 
 namespace TownCraft
 {
     public partial class MainWindow : Window
     {
+        //private GameManager _gameManager;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            //_gameManager = ((App)Application.Current).GameManager;
         }
 
-        private void MenuItem_CreateGame_Click(object sender, RoutedEventArgs e)
+        private void MenuButton_Click(object sender, RoutedEventArgs e)
         {
-            // Afficher le formulaire de création de partie
-            createFormGrid.Visibility = Visibility.Visible;
-            MenuChoice.Visibility = Visibility.Hidden;
+            if (MenuFrame != null && MenuFrame.CanGoBack)
+            {
+                MenuFrame.GoBack();
+            }
         }
 
-        private void MenuItem_LoadGame_Click(object sender, RoutedEventArgs e)
+        private void MenuFrame_Navigated(object sender, NavigationEventArgs e)
         {
-            // Implémentez ici le chargement d'une partie
-            createFormGrid.Visibility = Visibility.Hidden;
-            MenuChoice.Visibility = Visibility.Visible;
+           
         }
+
     }
 }

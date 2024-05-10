@@ -1,10 +1,10 @@
-using App.Core;
+using TownCraft.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace App.Elements
+namespace TownCraft.Elements
 {
     public class Elements : Cell
     {

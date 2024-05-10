@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace App.Satisfaction
+namespace TownCraft.Satisfaction
 {
+    // 5/100 habitants
     public class Health : Satisfaction
     {
 
