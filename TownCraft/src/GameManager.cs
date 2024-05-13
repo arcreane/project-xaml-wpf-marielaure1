@@ -72,11 +72,11 @@ namespace TownCraft
 
         public void SaveGame()
         {
-            if (_gameData != null)
-            {
-                string json = JsonConvert.SerializeObject(_gameData);
-                File.WriteAllText("gameData.json", json);
-            }
+            //if (_gameData != null)
+            //{
+            //    string json = JsonConvert.SerializeObject(_gameData);
+            //    File.WriteAllText("gameData.json", json);
+            //}
         }
     }
 }

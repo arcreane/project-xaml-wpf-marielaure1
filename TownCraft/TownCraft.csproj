@@ -13,12 +13,18 @@
     <None Remove="banner1.png" />
     <None Remove="ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png" />
     <None Remove="res\images\banner\banner1.png" />
+    <None Remove="src\Ui\aryanoone_A_funny_banner_with_isometric_buildings_people_happy__8fa6566d-0720-4196-9e4a-2bda0f216693.png" />
+    <None Remove="src\Ui\flat-color-icons_home.png" />
+    <None Remove="src\Ui\ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="aryanoone_A_realistic_vibrant_and_highy_descriptive_interface_f_84d6ed6c-8eea-4120-a8eb-4d81766015d0.png" />
     <Resource Include="banner1.png" />
     <Resource Include="ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png" />
+    <Resource Include="src\Ui\aryanoone_A_funny_banner_with_isometric_buildings_people_happy__8fa6566d-0720-4196-9e4a-2bda0f216693.png" />
+    <Resource Include="src\Ui\flat-color-icons_home.png" />
+    <Resource Include="src\Ui\ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png" />
   </ItemGroup>
 
   <ItemGroup>

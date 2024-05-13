@@ -9,6 +9,14 @@
       Title="SplashScreenUI">
 
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/src/Ui/aryanoone_A_funny_banner_with_isometric_buildings_people_happy__8fa6566d-0720-4196-9e4a-2bda0f216693.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Margin="241,163,0,0"  Content="TownCraft" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="70" FontWeight="Bold" Height="80"/>
+
     </Grid>
 </Page>

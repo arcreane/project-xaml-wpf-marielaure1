@@ -25,13 +25,13 @@ namespace TownCraft.Ui
                 playerName = PlayerName.Text;
                 cityName = CityName.Text;
 
-                var gameData = new Game;
-                {
-                    PlayerName = playerName,
-                    CityName = cityName
-                };
+                //var gameData = new Game;
+                //{
+                //    PlayerName = playerName;
+                //    CityName = cityName;
+                //};
 
-                _gameManager.StartGame(gameData);
+                //_gameManager.StartGame(gameData);
 
                 menuFrame.Navigate(new Uri("src/UI/GameUI.xaml", UriKind.Relative));
             }

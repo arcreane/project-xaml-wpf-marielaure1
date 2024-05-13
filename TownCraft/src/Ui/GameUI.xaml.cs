@@ -24,5 +24,20 @@ namespace TownCraft.Ui
         {
             //InitializeComponent();
         }
+
+        private void GridSplitter_DragDelta(object sender, System.Windows.Controls.Primitives.DragDeltaEventArgs e)
+        {
+
+        }
+
+        private void GridSplitter_DragDelta_1(object sender, System.Windows.Controls.Primitives.DragDeltaEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
