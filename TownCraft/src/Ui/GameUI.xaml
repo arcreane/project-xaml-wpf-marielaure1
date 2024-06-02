@@ -12,14 +12,68 @@
         <Grid.Background>
             <ImageBrush ImageSource="/src/Ui/ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png"/>
         </Grid.Background>
-        <GridSplitter HorizontalAlignment="Center" Height="40" Margin="0,410,0,0" VerticalAlignment="Top" Width="800" DragDelta="GridSplitter_DragDelta" Background="#7F000000"/>
-        <GridSplitter HorizontalAlignment="Center" Height="39" Margin="0,371,0,0" VerticalAlignment="Top" Width="800" Background="#7F000000" DragDelta="GridSplitter_DragDelta_1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="14" Margin="124,383,0,0" VerticalAlignment="Top" Width="21" Click="Button_Click"/>
-        <Image HorizontalAlignment="Left" Height="42" Margin="297,249,0,0" VerticalAlignment="Top" Width="42">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="/src/Ui/flat-color-icons_home.png"/>
-            </Image.OpacityMask>
-        </Image>
+
+        <StackPanel Orientation="Vertical" Background="#8C000000" Margin="0,377,0,-1" >
+            <StackPanel Orientation="Horizontal" Width="799">
+                <GroupBox x:Name="PlayerBtn" Margin="20,0,150, 0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" SnapsToDevicePixels="True" BorderThickness="0,0,0,0" ClipToBounds="True" Height="35">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/src/Ui/trophy.png" Width="20" Height="20" Margin="0,0,10,0"/>
+                        <TextBlock x:Name="PlayerBtnText" VerticalAlignment="Center" Foreground="#FFFFFF"><Run Text="Player"/></TextBlock>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Background="{x:Null}" Margin="0, 0, 30, 0" BorderBrush="{x:Null}" Foreground="{x:Null}" SnapsToDevicePixels="True" BorderThickness="0,0,0,0" ClipToBounds="True" Height="37" Width="120">
+                    <StackPanel Orientation="Horizontal" Height="31">
+                        <Button x:Name="ResidentialBuildingBtn" Click="ResidentialBuildingBtn_Click" Margin="0, 0, 30, 0"  Height="30" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}">
+                            <Image Source="/src/Ui/flat-color-icons_home.png"/>
+                        </Button>
+                        <Button x:Name="EducationBuildingBtn" Height="30" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" >
+                            <Image Source="/src/Ui/noto_post-office.png"/>
+                        </Button>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="800" Height="36" HorizontalAlignment="Left">
+                <GroupBox x:Name="CityBtn" Background="{x:Null}" Margin="20, 0, 180, 0"  BorderBrush="{x:Null}" Foreground="{x:Null}" Padding="5" SnapsToDevicePixels="True" BorderThickness="0,0,0,0" ClipToBounds="True">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="CityBtnText" Foreground="#FFFFFF"><Run Text="Player"/></TextBlock>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox x:Name="NumberOfCitizen" Background="{x:Null}" Margin="0, 0, 180, 0"  BorderBrush="{x:Null}" Foreground="{x:Null}" Padding="5" SnapsToDevicePixels="True" BorderThickness="0,0,0,0" ClipToBounds="True">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="NumberOfCitizenText" VerticalAlignment="Center" Foreground="#FFFFFF"><Run Text="Player"/></TextBlock>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox x:Name="FinanceBtn" Background="{x:Null}" Margin="0, 0, 180, 0" BorderBrush="{x:Null}" Foreground="{x:Null}" Padding="5" SnapsToDevicePixels="True" BorderThickness="0,0,0,0" ClipToBounds="True">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="FinanceBtnText" VerticalAlignment="Center" Foreground="#FFFFFF"><Run Text="Player"/></TextBlock>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox x:Name="HapinessBtn" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Padding="5" SnapsToDevicePixels="True" BorderThickness="0,0,0,0" ClipToBounds="True">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="HapinessBtnText" VerticalAlignment="Center" Foreground="#FFFFFF"><Run Text="Player"/></TextBlock>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+        </StackPanel>
+
+        <GroupBox Name="ResidentialBuildingModal" Visibility="Hidden" HorizontalAlignment="Left" Margin="250,265,0,0" VerticalAlignment="Top" Background="#7F000000" BorderBrush="{x:Null}" Foreground="{x:Null}" Padding="5" SnapsToDevicePixels="True" BorderThickness="0,0,0,0" ClipToBounds="True" Height="98" Width="177">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Button Name="HouseBtn" Margin="0, 0, 30, 0" Height="30" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal" >
+                        <Image Source="/src/Ui/Exterior.png" Margin="0, 0, 10, 0" Height="24" Width="24"/>
+                        <TextBlock VerticalAlignment="Center" Foreground="#FFFFFF">Maison</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Name="ApartmentBlockBtn" Margin="0, 0, 30, 0" Height="30" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal" >
+                        <Image Source="/src/Ui/Real Estate.png" Margin="0, 0, 10, 0" Stretch="UniformToFill"/>
+                        <TextBlock VerticalAlignment="Center" Foreground="#FFFFFF">Appartement</TextBlock>
+                    </StackPanel>
+                </Button>
+
+            </StackPanel>
+        </GroupBox>
+
 
 
     </Grid>

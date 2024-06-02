@@ -1,11 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TownCraft.Satisfaction.Finances
 {
-    public class Tax : Finance
+    public class Tax
     {
         public Tax()
         {
@@ -15,24 +12,24 @@ namespace TownCraft.Satisfaction.Finances
 
         public decimal Percent { get; set; }
 
-        public void GetAmount()
+        public decimal GetAmount()
         {
-            // TODO implement here
+            return Amount;
         }
 
-        public void SetAmount()
+        public void SetAmount(decimal amount)
         {
-            // TODO implement here
+            Amount = amount;
         }
 
-        public void GetPercent()
+        public decimal GetPercent()
         {
-            // TODO implement here
+            return Percent;
         }
 
-        public void SetPercent()
+        public void SetPercent(decimal percent)
         {
-            // TODO implement here
+            Percent = percent;
         }
     }
 }

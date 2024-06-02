@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TownCraft.Satisfaction.Finances
 {
@@ -13,14 +10,14 @@ namespace TownCraft.Satisfaction.Finances
 
         public decimal CityFlouz { get; set; }
 
-        public void GetCityFlouz()
+        public decimal GetCityFlouz()
         {
-            // TODO implement here
+            return CityFlouz;
         }
 
-        public void SetCityFlouz()
+        public void SetCityFlouz(decimal cityFlouz)
         {
-            // TODO implement here
+            CityFlouz = cityFlouz;
         }
     }
 }

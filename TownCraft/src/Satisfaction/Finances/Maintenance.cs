@@ -1,12 +1,8 @@
-using TownCraft.Satisfaction.Finances;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TownCraft.Satisfaction.Finances
 {
-    public class Maintenance : Finance
+    public class Maintenance
     {
         public Maintenance()
         {
@@ -14,14 +10,14 @@ namespace TownCraft.Satisfaction.Finances
 
         public decimal Amount { get; set; }
 
-        public void GetAmount()
+        public decimal GetAmount()
         {
-            // TODO implement here
+            return Amount;
         }
 
-        public void SetAmount()
+        public void SetAmount(decimal amount)
         {
-            // TODO implement here
+            Amount = amount;
         }
     }
 }

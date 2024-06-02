@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -25,13 +26,7 @@ namespace TownCraft.Ui
                 playerName = PlayerName.Text;
                 cityName = CityName.Text;
 
-                //var gameData = new Game;
-                //{
-                //    PlayerName = playerName;
-                //    CityName = cityName;
-                //};
-
-                //_gameManager.StartGame(gameData);
+                _gameManager.CreateGame(playerName, cityName);
 
                 menuFrame.Navigate(new Uri("src/UI/GameUI.xaml", UriKind.Relative));
             }

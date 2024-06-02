@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TownCraft.Satisfaction
 {
-    public class Citizen : Satisfaction
+    public class Citizen
     {
 
         public Citizen()

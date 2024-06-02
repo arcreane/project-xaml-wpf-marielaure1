@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,24 +21,39 @@ namespace TownCraft.Ui
     /// </summary>
     public partial class GameUI : Page
     {
+
+        private GameManager _gameManager;
+
+        public TownCraft.Core.Game Game { get; private set; }
+
         public GameUI()
         {
-            //InitializeComponent();
+            InitializeComponent();
+
+            _gameManager = ((App)Application.Current).GameManager;
+
+            Game = _gameManager.StartGame();
+            PlayerBtnText.Text = Game.Player.Name;
+            CityBtnText.Text = Game.City.Name;
+            NumberOfCitizenText.Text = Game.City.NumberOfCitizen.ToString();
+            FinanceBtnText.Text = Game.Finance.CityFlouz.ToString();
+            HapinessBtnText.Text = Game.Happiness.SatisfactionRate.ToString();
+
         }
 
-        private void GridSplitter_DragDelta(object sender, System.Windows.Controls.Primitives.DragDeltaEventArgs e)
+
+
+
+
+        private void ResidentialBuildingBtn_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void GridSplitter_DragDelta_1(object sender, System.Windows.Controls.Primitives.DragDeltaEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            if (ResidentialBuildingModal.Visibility == Visibility.Visible)
+            {
+                ResidentialBuildingModal.Visibility = Visibility.Hidden;
+            } else
+            {
+                ResidentialBuildingModal.Visibility = Visibility.Visible;
+            }
         }
     }
 }

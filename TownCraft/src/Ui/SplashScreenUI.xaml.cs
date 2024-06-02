@@ -22,7 +22,7 @@ namespace TownCraft.Ui
     {
         public SplashScreenUI()
         {
-            Initializecomponent();
+            //Initializecomponent();
         }
     }
 }

@@ -19,24 +19,22 @@ namespace TownCraft.Core
 
         public void SetName(string name)
         {
-            // TODO implement here
+            Name = name;
         }
 
         public string GetName()
         {
-            // TODO implement here
-            return "";
+            return Name;
         }
 
         public void SetLevel(int level)
         {
-            // TODO implement here
+            Level = level;
         }
 
         public int GetLevel()
         {
-            // TODO implement here
-            return 0;
+            return Level;
         }
 
         public void SetChallengesCompleted(int challengesCompleted)

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using TownCraft.Core;
 
 namespace TownCraft
 {
@@ -22,20 +23,14 @@ namespace TownCraft
         public TownCraft.Gameplay.Audio Audio { get; private set; }
         public TownCraft.Core.Game Game { get; private set; }
         public TownCraft.Core.Menu Menu { get; private set; }
-        private TownCraft.Core.Menu _menu;
           
         public GameManager()
         {
             //_menu = new TownCraft.Core.Menu();
-
+            Game = new Game();
             CurrentTime = new Time();
             Audio = new TownCraft.Gameplay.Audio();
-            // Afficher le menu au démarrage du jeu
-            //_menu.Display();
-            // Attendre la sélection de l'utilisateur
-            //int option = int.Parse(Console.ReadLine());
-            // Gérer l'option sélectionnée
-            //_menu.SelectOption(option);
+            
         }
 
         public void ShowMenu()
@@ -45,9 +40,25 @@ namespace TownCraft
             Console.ReadLine();
         }
 
-        public void StartGame()
+        public void CreateGame(string player, string city)
         {
-            // TODO implement here
+
+            Game.CreatePlayer(player);
+            Game.CreateCity(city);
+            Game.CreateFinance();
+        }
+
+        public void LoadGame(int idPlayer, int idCity)
+        {
+
+            Game.LoadPlayer(idPlayer);
+            //Game.SetCity(city);
+        }
+
+        public Game StartGame()
+        {
+            Game.IsRunning = true;
+            return Game;
         }
 
         public void PauseGame()
