@@ -6,6 +6,9 @@ using System.Text;
 
 namespace TownCraft.Elements
 {
+    /// <summary>
+    /// GraphicalElement
+    /// </summary>
     public class Elements : Cell
     {
 

@@ -7,8 +7,16 @@ namespace TownCraft.Elements.Buildings
 {
     public class EducationBuilding : Building
     {
+
+        public int NumberOfOccupants { get; private set; }
+        public int Tax { get; private set; }
+        public decimal ConstructionCost { get; private set; }
         public EducationBuilding()
         {
+            Type = "Education";
+            NumberOfOccupants = 200;
+            Tax = 20000;
+            ConstructionCost = 500000;
         }
 
         public string Category { get; } = "education";

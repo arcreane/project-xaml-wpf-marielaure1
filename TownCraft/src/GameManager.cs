@@ -30,8 +30,8 @@ namespace TownCraft
 
         public GameManager()
         {
-            Database = new Database.Database();
-            Database.OpenConnection();
+            ///Database = new Database.Database();
+            ///Database.OpenConnection();
             //_menu = new TownCraft.Core.Menu();
             Game = new Game(this);  
             CurrentTime = new Time();

@@ -5,7 +5,7 @@ namespace TownCraft.Database
 {
     public class Database
     {
-        private readonly string _connectionString = "server=localhost;port=3306;database=towncraft;user=root;password=@MIm131609";
+        private readonly string _connectionString = "server=;port=;database=;user=;password=";
 
         public MySqlConnection OpenConnection()
         {

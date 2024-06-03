@@ -96,6 +96,11 @@ namespace TownCraft.Ui
             ConstructBuilding("house");
         }
 
+        private void ApartmentBlockBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ConstructBuilding("apartment-block");
+        }
+
         private void EducationBuildingBtn_Click(object sender, RoutedEventArgs e)
         {
             ConstructBuilding("education");
@@ -151,10 +156,10 @@ namespace TownCraft.Ui
                             selectedCell.Background = new ImageBrush(new BitmapImage(new Uri(Game.City.House.GetImageLevel())));
                             break;
                         case "social-housing":
-                            selectedCell.Background = new ImageBrush(new BitmapImage(new Uri(Game.City.House.GetImageLevel())));
+                            selectedCell.Background = new ImageBrush(new BitmapImage(new Uri(Game.City.SocialHousing.GetImageLevel())));
                             break;
                         case "apartment-block":
-                            selectedCell.Background = new ImageBrush(new BitmapImage(new Uri(Game.City.House.GetImageLevel())));
+                            selectedCell.Background = new ImageBrush(new BitmapImage(new Uri(Game.City.ApartmentBlock.GetImageLevel())));
                             break;
                         case "education":
                             selectedCell.Background = new ImageBrush(new BitmapImage(new Uri(Game.City.EducationBuilding.GetImageLevel())));

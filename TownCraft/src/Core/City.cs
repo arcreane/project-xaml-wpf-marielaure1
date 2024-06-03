@@ -101,6 +101,42 @@ namespace TownCraft.Core
                         }
                        
                         break;
+                    case "apartment-block":
+                        ApartmentBlock = new ApartmentBlock();
+
+                        if (!_gameManager.Game.Finance.RemoveFromCityFlouz(ApartmentBlock.ConstructionCost))
+                        {
+
+                        }
+                        else
+                        {
+                            cell.SetBuilding(ApartmentBlock);
+                            cell.Available = false;
+                            NumberOfCitizen += ApartmentBlock.NumberOfOccupants;
+                            AddTaxRevenue(ApartmentBlock.Tax);
+
+                            AddResidenceResources(ApartmentBlock.NumberOfOccupants);
+                        }
+
+                        break;
+                    case "education":
+                        EducationBuilding = new EducationBuilding();
+
+                        if (!_gameManager.Game.Finance.RemoveFromCityFlouz(EducationBuilding.ConstructionCost))
+                        {
+
+                        }
+                        else
+                        {
+                            cell.SetBuilding(EducationBuilding);
+                            cell.Available = false;
+                            NumberOfCitizen += EducationBuilding.NumberOfOccupants;
+                            AddTaxRevenue(EducationBuilding.Tax);
+
+                            AddResidenceResources(EducationBuilding.NumberOfOccupants);
+                        }
+
+                        break;
                     default:
                         throw new ArgumentException("Unknown building type");
                 }
@@ -117,6 +153,14 @@ namespace TownCraft.Core
         }
 
         public void AddResidenceResources(int numberOfOccupants)
+        {
+            _gameManager.Game.Residence.SetNumberOfOccupants(numberOfOccupants);
+            _gameManager.Game.Residence.SetResidenceBuildings();
+            _gameManager.Game.Residence.CalculateResidenceSatisfaction();
+
+        }
+
+        public void AddEducationResources(int numberOfOccupants)
         {
             _gameManager.Game.Residence.SetNumberOfOccupants(numberOfOccupants);
             _gameManager.Game.Residence.SetResidenceBuildings();

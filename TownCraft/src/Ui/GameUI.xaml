@@ -88,7 +88,7 @@
                         <TextBlock VerticalAlignment="Center" Foreground="#FFFFFF">Maison</TextBlock>
                     </StackPanel>
                 </Button>
-                <Button Name="ApartmentBlockBtn" Margin="0, 0, 30, 0" Height="30" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Button Name="ApartmentBlockBtn"  Click="ApartmentBlockBtn_Click" Margin="0, 0, 30, 0" Height="30" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top">
                     <StackPanel Orientation="Horizontal" >
                         <Image Source="/src/Ui/Real Estate.png" Margin="0, 0, 10, 0" Stretch="UniformToFill"/>
                         <TextBlock VerticalAlignment="Center" Foreground="#FFFFFF">Appartement</TextBlock>
@@ -103,9 +103,21 @@
             <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal" >
                     <TextBlock VerticalAlignment="Center" Margin="0,0,10,0" Foreground="#FFFFFF">Residence</TextBlock>
-                    <TextBlock x:Name="ResidenceResourcesText" VerticalAlignment="Center" Foreground="#FFFFFF"/>
+                    <TextBlock x:Name="ResidenceResourcesText" VerticalAlignment="Center" Foreground="#FFFFFF" Text="0"/>
                 </StackPanel>
-                
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,10,0" Foreground="#FFFFFF">Education</TextBlock>
+                    <TextBlock  VerticalAlignment="Center" Foreground="#FFFFFF" Text="0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,10,0" Foreground="#FFFFFF">Securité</TextBlock>
+                    <TextBlock  VerticalAlignment="Center" Foreground="#FFFFFF" Text="0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,10,0" Foreground="#FFFFFF">Santé</TextBlock>
+                    <TextBlock  VerticalAlignment="Center" Foreground="#FFFFFF" Text="0"/>
+                </StackPanel>
+
             </StackPanel>
         </GroupBox>
     </Grid>

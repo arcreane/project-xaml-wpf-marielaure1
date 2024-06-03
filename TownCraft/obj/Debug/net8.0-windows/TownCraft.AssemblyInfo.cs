@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TownCraft")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f84b9b14d1b59be2f89edfec2f5f5e016d44021b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a510edd3ba2216c11b83cd41980715057908dd2")]
 [assembly: System.Reflection.AssemblyProductAttribute("TownCraft")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TownCraft")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
