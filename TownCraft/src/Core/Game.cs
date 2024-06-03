@@ -1,4 +1,7 @@
 using System;
+using TownCraft.Elements.Buildings.ResidentialBuilding;
+using TownCraft.Database;
+using TownCraft.Satisfaction;
 using TownCraft.Satisfaction.Finances;
 
 namespace TownCraft.Core
@@ -12,15 +15,19 @@ namespace TownCraft.Core
         public Finance Finance { get; set; }
         public Tax Tax { get; set; }
         public Maintenance Maintenance { get; set; }
+        public House House { get; set; }
+        public Residence Residence { get; set; }
+        public CityRepository CityRepository { get; private set; }
 
-        public Game()
+        public Game(GameManager gameManager)
         {
             Player = new Player();
-            City = new City();
+            City = new City(gameManager);
             Happiness = new Happiness();
             Finance = new Finance();
             Tax = new Tax();
             Maintenance = new Maintenance();
+            Residence = new Residence();
         }
 
         public void CreatePlayer(string name)
@@ -28,6 +35,7 @@ namespace TownCraft.Core
             int level = 1;
             int ChallengesCompleted = 1;
             SetPlayer(name, level, ChallengesCompleted);
+
         }
 
         public void CreateCity(string name)
@@ -35,13 +43,14 @@ namespace TownCraft.Core
             int numberOfCitizen = 0;
             SetCity(name, numberOfCitizen);
             SetDatas(3);
+            ///CityRepository.CreateCity(City);
         }
 
         public void CreateFinance()
         {
             SetTax(0);
             SetMaintenance(0);
-            SetCityFlouz(150000);
+            SetCityFlouz(1500000);
         }
 
         public void LoadPlayer(int id)
@@ -85,31 +94,11 @@ namespace TownCraft.Core
             return Finance.GetCityFlouz();
         }
 
-        public string GetPlayer()
+        public void SetDatas(int satisfactionRate)
         {
-            return Player.GetName();
+            Happiness.SetSatisfactionRate(satisfactionRate);
         }
 
-        public string GetCity()
-        {
-            return City.GetName();
-        }
 
-        public void SetDatas(int happiness)
-        {
-            if (Enum.IsDefined(typeof(SatisfactionRateName), happiness))
-            {
-                Happiness.SetSatisfactionRate(happiness);
-            }
-            else
-            {
-                throw new ArgumentOutOfRangeException(nameof(happiness), "Happiness rate must be between 1 and 5.");
-            }
-        }
-
-        public string GetSatisfactionDescription()
-        {
-            return Happiness.GetDescription((SatisfactionRateName)Happiness.SatisfactionRate);
-        }
     }
 }

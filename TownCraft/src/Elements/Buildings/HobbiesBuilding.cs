@@ -17,5 +17,10 @@ namespace TownCraft.Elements.Buildings
         {
             throw new NotImplementedException();
         }
+
+        public string GetImageLevel()
+        {
+            return "pack://application:,,,/src/Ui/fluent-emoji-flat_school.png";
+        }
     }
 }

@@ -10,30 +10,38 @@ namespace TownCraft.Satisfaction
 
         public Residence()
         {
+            NumberOfOccupants = 0;
+            ResidenceBuildings = 0;
         }
 
         public int NumberOfOccupants { get; set; }
 
         public int ResidenceBuildings { get; set; }
 
-        public void GetNumberOfOccupants()
+        public double CalculateResidenceSatisfaction()
         {
-            // TODO implement here
+            SatisfactionRate = NumberOfOccupants * ResidenceBuildings * 10;
+            return SatisfactionRate;
         }
 
-        public void SetNumberOfOccupants()
+        public int GetNumberOfOccupants()
         {
-            // TODO implement here
+            return NumberOfOccupants;
         }
 
-        public void GetResidenceBuildings()
+        public void SetNumberOfOccupants(int numberOfOccupants)
         {
-            // TODO implement here
+            NumberOfOccupants += numberOfOccupants;
+        }
+
+        public int GetResidenceBuildings()
+        {
+            return ResidenceBuildings;
         }
 
         public void SetResidenceBuildings()
         {
-            // TODO implement here
+            ResidenceBuildings++;
         }
     }
 }

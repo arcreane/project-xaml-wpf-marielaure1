@@ -1,13 +1,9 @@
 using TownCraft.Elements.Buildings.Infrastructure;
 using TownCraft.Elements.Buildings;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TownCraft.Core
 {
-    public class Cell : City
+    public class Cell
     {
         public Cell()
         {
@@ -15,13 +11,9 @@ namespace TownCraft.Core
 
         public int X { get; set; }
         public int Y { get; set; }
-
         public string Type { get; set; }
-
-        public bool Available { get; set; }
-
+        public bool Available { get; set; } = true;
         public Infrastructure Infrastructure { get; set; }
-
         public Building Building { get; set; }
 
         public string GetType()
@@ -32,8 +24,7 @@ namespace TownCraft.Core
 
         public bool IsAvailable()
         {
-            // TODO implement here
-            return false;
+            return Available;
         }
 
         public void SetInfrastructure(Infrastructure infrastructure)
@@ -43,7 +34,8 @@ namespace TownCraft.Core
 
         public void SetBuilding(Building building)
         {
-            // TODO implement here
+            Building = building;
+            Available = false; // La cellule n'est plus disponible
         }
 
         public Infrastructure GetInfrastructure()
@@ -54,8 +46,7 @@ namespace TownCraft.Core
 
         public Building GetBuilding()
         {
-            // TODO implement here
-            return null;
+            return Building;
         }
     }
 }

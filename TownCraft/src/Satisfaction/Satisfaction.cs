@@ -13,16 +13,21 @@ namespace TownCraft.Satisfaction
         {
         }
 
-        public int satisfaction { get; set; }
+        public double SatisfactionRate { get; set; }
 
-        public void getSatisfaction()
+        public double GetSatisfaction()
         {
-            // TODO implement here
+            return SatisfactionRate;
         }
 
-        public void setSatisfaction()
+        public void AddSatisfaction(double satisfaction)
         {
-            // TODO implement here
+            SatisfactionRate += satisfaction;
+        }
+
+        public void RemoveSatisfaction(double satisfaction)
+        {
+            SatisfactionRate -= satisfaction;
         }
     }
 }

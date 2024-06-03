@@ -19,5 +19,23 @@ namespace TownCraft.Satisfaction.Finances
         {
             CityFlouz = cityFlouz;
         }
+
+        public void AddToCityFlouz(decimal amount)
+        {
+            CityFlouz += amount;
+        }
+
+        public bool RemoveFromCityFlouz(decimal amount)
+        {
+            if (CityFlouz >= amount)
+            {
+                CityFlouz -= amount;
+
+                return true;
+            }
+            
+            return false;
+            
+        }
     }
 }

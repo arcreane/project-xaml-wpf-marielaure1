@@ -29,5 +29,10 @@ namespace TownCraft.Elements.Buildings
         {
             throw new NotImplementedException();
         }
+
+        public string GetImageLevel()
+        {
+            return "pack://application:,,,/src/Ui/mage_electricity-fill.png";
+        }
     }
 }

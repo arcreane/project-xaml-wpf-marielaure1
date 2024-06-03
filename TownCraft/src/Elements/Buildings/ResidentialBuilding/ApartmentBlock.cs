@@ -17,5 +17,10 @@ namespace TownCraft.Elements.Buildings.ResidentialBuilding
         {
             throw new NotImplementedException();
         }
+
+        public string GetImageLevel()
+        {
+            return "pack://application:,,,/src/Ui/Real Estate.png";
+        }
     }
 }

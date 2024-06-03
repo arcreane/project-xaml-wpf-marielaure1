@@ -14,6 +14,12 @@
     <None Remove="res\images\banner\banner1.png" />
     <None Remove="src\Ui\Exterior.png" />
     <None Remove="src\Ui\flat-color-icons_home.png" />
+    <None Remove="src\Ui\fluent-emoji-flat_health-worker.png" />
+    <None Remove="src\Ui\fluent-emoji-flat_school.png" />
+    <None Remove="src\Ui\fluent-emoji_police-car-light.png" />
+    <None Remove="src\Ui\fluent-emoji_water-wave.png" />
+    <None Remove="src\Ui\icomoon-free_road.png" />
+    <None Remove="src\Ui\mage_electricity-fill.png" />
     <None Remove="src\Ui\ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png" />
     <None Remove="src\Ui\noto_post-office.png" />
     <None Remove="src\Ui\Real Estate.png" />
@@ -21,10 +27,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.4\MySql.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+	</ItemGroup>
+
+
+	<ItemGroup>
     <Resource Include="banner1.png" />
     <Resource Include="ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png" />
     <Resource Include="src\Ui\Exterior.png" />
     <Resource Include="src\Ui\flat-color-icons_home.png" />
+    <Resource Include="src\Ui\fluent-emoji-flat_health-worker.png" />
+    <Resource Include="src\Ui\fluent-emoji-flat_school.png" />
+    <Resource Include="src\Ui\fluent-emoji_police-car-light.png" />
+    <Resource Include="src\Ui\fluent-emoji_water-wave.png" />
+    <Resource Include="src\Ui\icomoon-free_road.png" />
+    <Resource Include="src\Ui\mage_electricity-fill.png" />
     <Resource Include="src\Ui\ningzbruc_3d_cartoon_map_the_people_and_houses_in_the_city_is_i_d2fb2a6c-a805-4cfa-a659-6d4b6cd4f36a.png" />
     <Resource Include="src\Ui\noto_post-office.png" />
     <Resource Include="src\Ui\Real Estate.png" />
@@ -35,6 +58,10 @@
     <SplashScreen Include="res\images\banner\banner1.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </SplashScreen>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
   </ItemGroup>
 
 </Project>

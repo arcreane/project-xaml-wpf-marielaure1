@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TownCraft.Core;
+using System.Configuration;
+using TownCraft.Database;
 
 namespace TownCraft
 {
@@ -20,17 +22,20 @@ namespace TownCraft
         private GameState _gameState = GameState.Menu;
 
         public Time CurrentTime { get; private set; }
-        public TownCraft.Gameplay.Audio Audio { get; private set; }
-        public TownCraft.Core.Game Game { get; private set; }
-        public TownCraft.Core.Menu Menu { get; private set; }
-          
+        public Audio Audio { get; private set; }
+        public Game Game { get; private set; }
+        public Menu Menu { get; private set; }
+        public Database.Database Database { get; private set; }
+
+
         public GameManager()
         {
+            Database = new Database.Database();
+            Database.OpenConnection();
             //_menu = new TownCraft.Core.Menu();
-            Game = new Game();
+            Game = new Game(this);  
             CurrentTime = new Time();
             Audio = new TownCraft.Gameplay.Audio();
-            
         }
 
         public void ShowMenu()
@@ -42,7 +47,6 @@ namespace TownCraft
 
         public void CreateGame(string player, string city)
         {
-
             Game.CreatePlayer(player);
             Game.CreateCity(city);
             Game.CreateFinance();
@@ -50,7 +54,6 @@ namespace TownCraft
 
         public void LoadGame(int idPlayer, int idCity)
         {
-
             Game.LoadPlayer(idPlayer);
             //Game.SetCity(city);
         }
@@ -83,13 +86,6 @@ namespace TownCraft
 
         public void SaveGame()
         {
-            //if (_gameData != null)
-            //{
-            //    string json = JsonConvert.SerializeObject(_gameData);
-            //    File.WriteAllText("gameData.json", json);
-            //}
         }
     }
 }
-
-

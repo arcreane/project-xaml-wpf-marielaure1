@@ -36,6 +36,11 @@ namespace TownCraft.Satisfaction
         {
             // TODO implement here
         }
+
+        public string GetImageLevel()
+        {
+            return "pack://application:,,,/src/Ui/fluent-emoji-flat_school.png";
+        }
     }
 
 }

@@ -39,5 +39,6 @@ namespace TownCraft.Satisfaction
         {
             // TODO implement here
         }
+
     }
 }

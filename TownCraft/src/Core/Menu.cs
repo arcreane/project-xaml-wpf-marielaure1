@@ -34,10 +34,6 @@ namespace TownCraft.Core
         // Méthode pour obtenir toutes les sauvegardes
         public static string[] GetAllSaves()
         {
-            // Ici, vous pouvez implémenter la logique pour récupérer toutes les sauvegardes du jeu
-            // Par exemple, vous pouvez lire les fichiers de sauvegarde depuis un répertoire spécifique
-
-            // Pour l'exemple, je retourne un tableau de chaînes vides
             return new string[0];
         }
     }

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TownCraft.Elements.Buildings.SecurityBuildings
+namespace TownCraft.Elements.Buildings.SecurityBuilding
 {
-    public class SecurityBuildings : Building
+    public class SecurityBuilding : Building
     {
-        public SecurityBuildings()
+        public SecurityBuilding()
         {
         }
 
