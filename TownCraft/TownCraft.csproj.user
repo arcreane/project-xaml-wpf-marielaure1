@@ -1,46 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup>
+    <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
+    <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
+    <ActiveDebugProfile>Émulateur Android</ActiveDebugProfile>
+    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+  </PropertyGroup>
   <ItemGroup>
-    <ApplicationDefinition Update="App.xaml">
+    <MauiXaml Update="CreateGamePage.xaml">
       <SubType>Designer</SubType>
-    </ApplicationDefinition>
+    </MauiXaml>
+    <MauiXaml Update="LoadGamePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="GameUI.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="src\Ui\CreateGameUI.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="src\Ui\GameUI.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="src\Ui\LoadGameUI.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="src\Ui\MenuUI.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="src\Ui\SplashScreenUI.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="MainWindow.xaml">
+    <None Update="App.xaml">
       <SubType>Designer</SubType>
-    </Page>
-    <Page Update="src\Ui\CreateGameUI.xaml">
+    </None>
+    <None Update="AppShell.xaml">
       <SubType>Designer</SubType>
-    </Page>
-    <Page Update="src\Ui\GameUI.xaml">
+    </None>
+    <None Update="MainPage.xaml">
       <SubType>Designer</SubType>
-    </Page>
-    <Page Update="src\Ui\LoadGameUI.xaml">
+    </None>
+    <None Update="Platforms\Windows\App.xaml">
       <SubType>Designer</SubType>
-    </Page>
-    <Page Update="src\Ui\MenuUI.xaml">
+    </None>
+    <None Update="Platforms\Windows\Package.appxmanifest">
       <SubType>Designer</SubType>
-    </Page>
-    <Page Update="src\Ui\SplashScreenUI.xaml">
+    </None>
+    <None Update="Resources\Styles\Colors.xaml">
       <SubType>Designer</SubType>
-    </Page>
+    </None>
+    <None Update="Resources\Styles\Styles.xaml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
 </Project>

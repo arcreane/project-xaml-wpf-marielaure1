@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Towncraft.GameUI"
+             Title="Game UI">
+
+       
+        <Grid>
+        <!--<ScrollView x:Name="ScrollViewer" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" BackgroundColor="White">
+            <CollectionView x:Name="CityGrid" Grid.Row="2" BackgroundColor="Transparent">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="50" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Button WidthRequest="100" HeightRequest="100" Margin="1"
+                             BackgroundColor="LightGray"
+                             CommandParameter="" />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>-->
+        <StackLayout Grid.Row="0" Orientation="Horizontal" BackgroundColor="#8C000000" VerticalOptions="End" Padding="10" Spacing="10">
+                <Button x:Name="ResidentialBuildingBtn" Text="Residential" BackgroundColor="Transparent" TextColor="White" Clicked="ResidentialBuildingBtn_Click" />
+                <Button x:Name="EducationBuildingBtn" Text="Education" BackgroundColor="Transparent" TextColor="White" Clicked="EducationBuildingBtn_Click" />
+                <Button x:Name="SecurityBuildingBtn" Text="Security" BackgroundColor="Transparent" TextColor="White" Clicked="SecurityBuildingBtn_Click" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Orientation="Horizontal" BackgroundColor="#8C000000" VerticalOptions="Start" Padding="10" Spacing="10">
+                <Button x:Name="PlayerBtn" Text="Player" BackgroundColor="Transparent" TextColor="White" Clicked="PlayerBtn_Click" />
+            </StackLayout>
+        </Grid>
+
+
+    
+</ContentPage>

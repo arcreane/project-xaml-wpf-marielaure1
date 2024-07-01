@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Towncraft.LoadGamePage">
+
+    <VerticalStackLayout Padding="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label Text="Charger une partie" FontSize="24" HorizontalOptions="Center"/>
+
+        <Button Text="Retour" Clicked="BackButton_Click" BackgroundColor="White" TextColor="Black" WidthRequest="200" Margin="0,10"/>
+    </VerticalStackLayout>
+</ContentPage>

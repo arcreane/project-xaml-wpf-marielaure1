@@ -1,15 +1,16 @@
-﻿<Application x:Class="TownCraft.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:TownCraft"
-             StartupUri="MainWindow.xaml">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Towncraft"
+             x:Class="Towncraft.App">
     <Application.Resources>
-
+        <ResourceDictionary>
             <Style TargetType="Label">
                 <Setter Property="FontSize" Value="35"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-                <Setter Property="Foreground" Value="DarkGray"/>
-            <Setter Property="FontFamily" Value="res/fonts/terminal-grotesque.ttf #Terminal Grotesque"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="DarkGray"/>
+                <Setter Property="FontFamily" Value="res/fonts/terminal-grotesque.ttf#Terminal Grotesque"/>
             </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

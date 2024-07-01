@@ -1,21 +1,18 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
-using TownCraft.Gameplay;
+﻿using Microsoft.Maui.Controls;
+using Towncraft;
+///using Towncraft.Gameplay;
 
-namespace TownCraft
+namespace Towncraft
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
-        public TownCraft.GameManager GameManager { get; private set; }
+       // public GameManager GameManager { get; private set; }
 
         public App()
         {
-            GameManager = new GameManager();
+            InitializeComponent();
+            // GameManager = new GameManager();
+            MainPage = new NavigationPage(new MainPage());
         }
     }
-
 }
